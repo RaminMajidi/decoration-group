@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    //event fro sibar handler
+    //event for sibar handler
     var sideNav = document.querySelectorAll('.sidenav');
     M.Sidenav.init(sideNav, {
         edge: "right"
     });
     //********************* */
 
-    //event fro top_carousel handler
+    //event for top_carousel handler
     var carousels = document.querySelectorAll('.carousel');
     M.Carousel.init(carousels, {
         fullWidth: true,
