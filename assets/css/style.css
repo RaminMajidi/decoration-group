@@ -15,10 +15,14 @@
 
 body {
     background: url(/assets/images/body_back4.jpg) repeat;
+    overflow-x: hidden;
 }
 
 .mt_4 {
     margin-top: 4rem !important;
+}
+.mb_6 {
+    margin-bottom: 6rem !important;
 }
 
 .w_100 {
@@ -29,6 +33,13 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     border: 4px solid #880e4f;
+    margin-top: 5px;
+}
+
+.subtitle2 {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 4px solid #4a148c;
     margin-top: 5px;
 }
 
@@ -55,6 +66,7 @@ body {
 
 .nav_container {
     filter: drop-shadow(0 0 5px black);
+    -webkite-filter: drop-shadow(0 0 5px black);
 }
 
 nav ul li a:hover {
@@ -70,11 +82,13 @@ nav .brand-logo {
 nav .brand-logo img {
     width: 100%;
     filter: drop-shadow(0 0 2px white);
+    -webkite-filter:drop-shadow(0 0 2px white);
     transition: all 200ms ease;
 }
 
 nav .brand-logo img:hover {
     filter: drop-shadow(0 0 15px #f8bbd0);
+    -webkite-filter: drop-shadow(0 0 15px #f8bbd0);
 }
 
 .navbar_ul {
@@ -138,6 +152,7 @@ nav .brand-logo img:hover {
     background-color: rgba(0, 0, 0, 0.3);
     font-size: 1.3rem;
     backdrop-filter: blur(1px);
+    -webkite-backdrop-filter: blur(1px);
 }
 
 #nav_svg {
@@ -191,7 +206,66 @@ nav .brand-logo img:hover {
     -webkit-filter: drop-shadow(0 0 5px #880e4f);
 }
 
+/* divider style */
+.devider {
+    width: 100%;
+    filter: drop-shadow(0 0 5px #880e4f);
+    -webkite-filter: drop-shadow(0 0 5px #880e4f);
+}
 
+.devider img {
+    width: 90%;
+    max-width: 450px;
+}
+
+/* simple items style */
+
+.simple_item {
+    height: 30vh;
+    padding: 0.5rem;
+    margin:0.5rem 0;
+}
+
+.simple_item .image {
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.simple_item .image img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+    -webkit-object-fit:cover;
+    -moz-object-fit:cover;
+}
+
+.simple_item .image::after {
+    content: "مشاهده گالری";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(39, 2, 39, 0.8);
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: all 0.2s ease;
+    color: #f8bbd0;
+    border-radius: 5px !important;
+
+}
+
+.simple_item:hover .image::after {
+    transform: scale(1);
+}
 
 /* responsive style */
 

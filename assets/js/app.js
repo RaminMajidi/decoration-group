@@ -16,6 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     setInterval(()=>{
         M.Carousel.getInstance(carousels[0]).next()
-    },4000)
+    },5000)
     //********************* */
 });
