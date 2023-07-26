@@ -45,6 +45,30 @@ body {
     margin-top: 2rem !important;
     margin-bottom: 2rem !important;
 }
+.p_1{
+    padding: 1rem !important;
+}
+.p_2{
+    padding: 2rem !important;
+}
+
+.py_1{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+.py_2{
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+.px_1{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+.px_2{
+    padding-right: 2rem !important;
+    padding-bottom: 2rem !important;
+}
 
 .w_100 {
     width: 100% !important;
@@ -226,6 +250,56 @@ nav .brand-logo img:hover {
 .devider img {
     width: 90%;
     max-width: 450px;
+}
+
+
+/* simple items style */
+
+.simple_item {
+    height: 30vh;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.simple_item .image {
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.simple_item .image img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+    -webkit-object-fit: cover;
+    -moz-object-fit: cover;
+}
+
+.simple_item .image::after {
+    content: "مشاهده گالری";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(39, 2, 39, 0.8);
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: all 0.2s ease;
+    color: #f8bbd0;
+    border-radius: 5px !important;
+
+}
+
+.simple_item:hover .image::after {
+    transform: scale(1);
 }
 
 /* responsive style */

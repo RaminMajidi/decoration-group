@@ -19,8 +19,14 @@ document.addEventListener('DOMContentLoaded', function () {
         indicators: true,
     });
 
-    setInterval(()=>{
+    setInterval(() => {
         M.Carousel.getInstance(carousels[0]).next()
-    },5000)
+    }, 5000)
     //********************* */
+
+    //event for select input
+    var elems = document.querySelectorAll('select');
+    M.FormSelect.init(elems, {});
+    //********************* */
+
 });
