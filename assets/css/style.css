@@ -217,9 +217,10 @@ nav .brand-logo img:hover {
 
 /* divider style */
 .devider {
+    margin: 3rem 0 !important;
     width: 100%;
     filter: drop-shadow(0 0 5px #880e4f);
-    -webkite-filter: drop-shadow(0 0 5px #880e4f);
+    -webkit-filter: drop-shadow(0 0 5px #880e4f);
 }
 
 .devider img {
