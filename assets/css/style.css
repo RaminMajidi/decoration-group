@@ -18,6 +18,9 @@ body {
     overflow-x: hidden;
 }
 
+.mt_2{
+    margin-top: 2rem !important;  
+}
 .mt_4 {
     margin-top: 4rem !important;
 }
@@ -104,6 +107,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.d_block{
+    display: block !important;
+}
+
 main{
     margin-top: 4.2rem;
 }
