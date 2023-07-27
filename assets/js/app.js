@@ -29,4 +29,14 @@ document.addEventListener('DOMContentLoaded', function () {
     M.FormSelect.init(elems, {});
     //********************* */
 
+
+    //event  toast message for confirm comment in article page
+    document.getElementById('confirm_comment').addEventListener('click', function () {
+        M.toast({
+            html: 'نظر با موفقیت ثبت شد !',
+            classes: 'green lighten-1'
+        })
+    })
+    //********************* */
+
 });
