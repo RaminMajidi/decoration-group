@@ -22,6 +22,17 @@ body {
     margin-top: 4rem !important;
 }
 
+.mt_6 {
+    margin-top: 6rem !important;
+}
+.mt_8 {
+    margin-top: 8rem !important;
+}
+
+.mb_4 {
+    margin-bottom: 4rem !important;
+}
+
 .mb_6 {
     margin-bottom: 6rem !important;
 }
@@ -99,6 +110,18 @@ main{
 
 .pagination li.active{
     background-color: #880e4f;
+}
+.text_justify{
+    text-align: justify !important;
+}
+
+.position_relative{
+    position: relative !important;
+}
+
+.d_flex_between{
+    display: flex;
+    justify-content: space-between;
 }
 
 
