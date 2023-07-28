@@ -28,3 +28,7 @@
     transform: scale(1.1);
     color: #e1bee7 !important;
 }
+
+.video_items .simple_item{
+    height: auto !important;
+}

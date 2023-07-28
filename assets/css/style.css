@@ -294,7 +294,7 @@ nav .brand-logo img:hover {
 
 /* simple items style */
 
-.simple_item,.simple_item2 {
+.simple_item {
     height: 30vh;
     padding: 0.5rem;
     margin: 0.5rem 0;
